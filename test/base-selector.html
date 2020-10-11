@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style>
+        #content{
+            color:#fff;
+            background: #000;
+        }
+        #content{
+            color:red;
+            background: #000;
+        }
+        .list_item{
+            border: 1px solid orangered;
+        }
+        a[href]{
+            color:orange;
+        }
+        input[type~="text"]{
+            color: orange;
+        }
+        div[class*=article]{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">id选择器选中的元素1</div>
+    <div id="content">id选择器选中的元素2</div>
+    <ul>
+        <li class="list_item">类选择器</li>
+        <li class="list_item">类选择器</li>
+        <li class="list_item">类选择器</li>
+        <li class="list_item">类选择器</li>
+        <li class="list_item">类选择器</li>
+    </ul>
+    <a href="/">返回主页</a>
+    <input type="text input" value="test">
+    <div class="article">article</div>
+    <div class="article-title">article-title</div>
+    <div class="article-content">article-content</div>
+    <div class="article_footer">article_footer</div>
+</body>
+<script>
+    let item = document.getElementById("content");
+    console.log(item)
+</script>
+</html>
