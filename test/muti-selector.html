@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+</head>
+<style>
+    /* 后代选择器 选择器+ 空格+ 选择器,为了限定生效的范围  */
+    .page .article p{
+        font-size: 18px;
+    }
+    /* 子元素选择器  选择器+大于号+选择器,为了限定生效的范围，并且只选择它的直系后代*/
+    .page >.article>p {
+        color:grey;
+    }
+    /* 兄弟选择器,只能向后选择,选取同级元素, */
+    h1 + p{
+        margin-top:10px;
+        color:red!important;
+    }
+    /* 通用兄弟选择, 选取所有匹配条件的兄弟元素 */
+    h1 ~ p {
+        color:red!important;
+    }
+    
+    .menu-item {
+        background: #ccc;
+        color: #000;
+    }
+    /* 交集选择器,选取多个选择器的交集,选择器相连即可*/
+    .menu-item.active{
+        background: #aaa;
+        color: #fff;
+    }
+    /* 普通写法 */
+    .h h1{
+            margin:0;
+            padding:0;
+    }
+    .h h2{
+            margin:0;
+            padding:0;
+    }
+    .h h3{
+            margin:0;
+            padding:0;
+    }
+    /* 并集选择器,选择器用逗号分割,用于合并类似的样式 */
+    .h h1,h2,h3{
+        color:red;
+        margin:0;
+        padding:0;
+
+    }
+</style>
+<body>
+    <div class="page">
+        <div class="article">
+            <p>黑化肥发灰，灰化肥发黑</p>
+            <h1>标题</h1>
+            <p>黑化肥发灰，灰化肥发黑</p>
+            <p>黑化肥发灰会挥发；灰化肥挥发会发黑</p>
+            <p>黑化肥挥发发灰会花飞；灰化肥挥发发黑会飞花</p>
+        </div>
+        <p class="footer">版权</p>
+    </div>
+    <div class="menu">
+        <a href="" class="menu-item">1</a>
+        <a href="" class="menu-item active">2</a>
+        <a href="" class="menu-item">3</a>
+        <a href="" class="menu-item">4</a>
+        <a href="" class="menu-item">5</a>
+    </div>
+    <div class="h">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+    </div>
+</body>
+</html>
