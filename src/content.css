@@ -1,0 +1,19 @@
+/*
+ * @Date: ,: 2020-10-22 17:12:44
+ * @LastEditors: ,: sam
+ * @LastEditTime: ,: 2020-10-22 17:31:15
+ * @FilePath: ,: /mobile-ui-practice/src/content.css
+ */
+.tt-content{
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+    
+}
+/* 根据header和navbar自动适应内容区高度 */
+.tt-header ~ .tt-content{
+    padding-top: 2.3rem;
+}
+.tt-header ~ .tt-content{
+    padding-bottom: 2.5rem;
+}
