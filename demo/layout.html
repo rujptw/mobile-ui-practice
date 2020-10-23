@@ -1,44 +1,66 @@
 <!--
  * @Date: 2020-10-20 21:35:00
  * @LastEditors: sam
- * @LastEditTime: 2020-10-22 17:40:41
+ * @LastEditTime: 2020-10-23 15:27:16
  * @FilePath: /mobile-ui-practice/demo/layout.html
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="../src/ui.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <style>
-        .mask{
+        .login-wrap {
+            width: 300px;
+            height: 400px;
+            background: #fff;
             position: fixed;
-            /* 不用height为100%是因为例如某些场景需要露出标题栏，百分比不好调整 */
-            top:3rem;
+            top: -10%;
             bottom: 0;
-            left: 0;
             right: 0;
-            background: rgba(0, 0, 0, .5);
-            z-index:2000
+            left: 0;
+            margin: auto;
+            z-index: 400;
         }
     </style>
 </head>
+
 <body>
-    
+
     <div class="tt-header">
-     标题栏
+        标题栏
     </div>
     <div class="tt-navbar">
-     导航栏
+        导航栏
     </div>
-    <!-- 导航栏在内容区之上 -->
+    <!-- 导航栏在内容区之上  -->
     <div class="tt-content">
-     内容区
+        内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区
+        内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区
     </div>
     <!-- 蒙版 -->
     <div class="tt-mask">
     </div>
+    <div class="login-wrap"></div>
+
+
+    <!-- 绝对定位实现 -->
+    <!-- <div class="tt-pos-header">
+     标题栏
+    </div>
+    <div class="tt-pos-navbar">
+    导航区
+   </div>
+    <div class="tt-pos-content">
+     内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区
+     内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区
+    </div>
+    <div class="tt-pos-mask"></div> -->
+
 </body>
+
 </html>

@@ -1,8 +1,8 @@
 /*
  * @Date: ,: 2020-10-22 17:12:44
- * @LastEditors: ,: sam
- * @LastEditTime: ,: 2020-10-22 17:31:15
- * @FilePath: ,: /mobile-ui-practice/src/content.css
+ * @LastEditors: sam
+ * @LastEditTime: 2020-10-23 15:25:12
+ * @FilePath: /mobile-ui-practice/src/content.css
  */
 .tt-content{
     box-sizing: border-box;
@@ -14,6 +14,19 @@
 .tt-header ~ .tt-content{
     padding-top: 2.3rem;
 }
-.tt-header ~ .tt-content{
+.tt-navbar ~ .tt-content{
     padding-bottom: 2.5rem;
 }
+/* 绝对定位实现
+.tt-pos-content{
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+.tt-pos-header ~ .tt-pos-content{
+    padding-top:2.3rem;
+}
+.tt-pos-navbar ~ .tt-pos-content{
+    padding-bottom:2.3rem;
+} */
+

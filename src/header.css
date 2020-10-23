@@ -1,8 +1,8 @@
 /*
  * @Date: ,: 2020-10-22 17:13:10
- * @LastEditors: ,: sam
- * @LastEditTime: ,: 2020-10-22 17:23:34
- * @FilePath: ,: /mobile-ui-practice/src/header.css
+ * @LastEditors: sam
+ * @LastEditTime: 2020-10-23 15:24:21
+ * @FilePath: /mobile-ui-practice/src/header.css
  */
 /* 头部导航条 */
 
@@ -16,3 +16,15 @@
     z-index:200;
     border-bottom: 1px solid #ddd;
 }
+
+/* 绝对定位 实现布局
+.tt-pos-header{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    height: 2.3rem;
+    top:0;
+    z-index:200;
+    border-bottom: 1px solid #ddd;
+} */
