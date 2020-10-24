@@ -1,7 +1,7 @@
 /*
  * @Date: ,: 2020-10-22 17:12:44
  * @LastEditors: sam
- * @LastEditTime: 2020-10-23 15:25:12
+ * @LastEditTime: 2020-10-24 23:49:10
  * @FilePath: /mobile-ui-practice/src/content.css
  */
 .tt-content{
@@ -17,6 +17,40 @@
 .tt-navbar ~ .tt-content{
     padding-bottom: 2.5rem;
 }
+
+/* 内容分区 --Panel面板 */
+/* Panel标题 */
+.tt-content .tt-panel-title{
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    color:#aaa;
+    background:#fff;
+    border-top:1px solid #eee;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+/* Panel 内容区 */
+.tt-content .tt-panel-body{
+    position: relative;
+    margin-bottom: .6rem;
+    padding: .6rem 1rem;
+    background: #fff;
+    overflow: hidden;
+    border-top:1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* 可手动设置内容区是否有内边距 */
+.tt-content .tt-panel-body.no-padding{
+    padding:0;
+}
+
+
+
 /* 绝对定位实现
 .tt-pos-content{
     box-sizing: border-box;
