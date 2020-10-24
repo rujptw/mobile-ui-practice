@@ -1,0 +1,72 @@
+<!--
+ * @Date: 2020-10-20 21:35:00
+ * @LastEditors: sam
+ * @LastEditTime: 2020-10-24 18:19:09
+ * @FilePath: /mobile-ui-practice/demo/layout-component.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/ui.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .login-wrap {
+            width: 300px;
+            height: 400px;
+            background: #fff;
+            position: fixed;
+            top: -10%;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tt-header">
+        <div class="left"><i class="fa fa-chevron-left"></i></div>
+        <div class="title">我是标题</div>
+        <div class="right"><i class="fa fa-ellipsis-h"></i></div>
+        <!-- 去掉i标签里的class，即可模拟无右边菜单的情况，或者使用float+padding解决 -->
+
+    </div>
+    <div class="tt-navbar">
+        <a class="navbar-item"><i class="fa fa-home icon"></i><span class="name">首页</span></a>
+        <a class="navbar-item active"><i class="fa fa-list icon"></i><span class="name">分类</span></a>
+        <a class="navbar-item"><i class="fa fa-search icon"></i><span class="name">发现</span></a>
+        <a class="navbar-item"><i class="fa fa-user-circle icon"></i><span class="name">我的</span></a>
+    </div>
+    <!-- 导航栏在内容区之上  -->
+    <div class="tt-content">
+        内容区内容区
+    </div>
+    <!-- 蒙版 -->
+    <!-- <div class="tt-mask"> -->
+    </div>
+    <!-- <div class="login-wrap"></div> -->
+
+
+    <!-- 绝对定位实现 -->
+    <!-- <div class="tt-pos-header">
+     标题栏
+    </div>
+    <div class="tt-pos-navbar">
+    导航区
+   </div>
+    <div class="tt-pos-content">
+     内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区
+     内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区
+    </div>
+    <div class="tt-pos-mask"></div> -->
+
+</body>
+
+</html>

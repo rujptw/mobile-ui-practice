@@ -1,21 +1,61 @@
 /*
  * @Date: ,: 2020-10-22 17:13:10
  * @LastEditors: sam
- * @LastEditTime: 2020-10-23 15:24:21
+ * @LastEditTime: 2020-10-24 18:17:43
  * @FilePath: /mobile-ui-practice/src/header.css
  */
 /* 头部导航条 */
 
 .tt-header{
+    display: flex;
+    /* overflow:hidden; */
     position: fixed;
     box-sizing: border-box;
     width: 100%;
     max-width: 640px;
     height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
     top:0;
     z-index:200;
     border-bottom: 1px solid #ddd;
+    background:#f8f8f8;
 }
+
+/* header左边元素 */
+.tt-header > .left{
+    /* float:left;
+    width: 3rem; */
+    flex-basis: 3rem;
+    flex-shrink: 0;
+}
+
+/* header中间元素 */
+.tt-header > .title{
+    
+    flex-grow: 1;
+    /* padding-right: 3rem; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* float布局，当title元素边上有right元素时，padding-right为0，此时right元素要放到title元素前面 */
+/* .right + .title{
+    padding-right: 0px;
+} */
+
+/* header右边元素 */
+.tt-header > .right{
+    /* float:right;
+    width: 3rem; */
+    flex-basis: 3rem;
+    flex-shrink:0;
+}
+
+
+
+
 
 /* 绝对定位 实现布局
 .tt-pos-header{

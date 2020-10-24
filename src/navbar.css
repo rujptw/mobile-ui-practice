@@ -1,10 +1,11 @@
 /*
  * @Date: ,: 2020-10-22 17:12:53
  * @LastEditors: sam
- * @LastEditTime: 2020-10-23 15:30:58
- * @FilePath: /mobile-ui-practice/src/navBar.css
+ * @LastEditTime: 2020-10-24 18:18:14
+ * @FilePath: /mobile-ui-practice/src/navbar.css
  */
 .tt-navbar{
+    display: flex;
     position: fixed;
     box-sizing: border-box;
     bottom:0;
@@ -13,7 +14,34 @@
     height: 2.5rem;
     border-top: 1px solid #ddd;
     z-index:200;
+    background: #f8f8f8;
+    text-align:center;
 }
+
+/* navbar每个子项 */
+.tt-navbar > .navbar-item{
+    flex:1;
+    color:#808080;
+}
+
+/* nav-item激活样式 */
+.tt-navbar > .navbar-item.active{
+    color:#09bb07;
+}
+
+/* nav-item的icon样式 */
+.tt-navbar > .navbar-item > .icon{
+    padding: .3rem 0 .1rem;
+    font-size: 1.1rem;
+}
+
+/* nav-item的文字样式 */
+.tt-navbar > .navbar-item > .name{
+   display: block;
+   font-size: .5rem;
+}
+
+
 
 /* 绝对定位实现 */
 /* .tt-pos-navbar{
