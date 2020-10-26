@@ -1,8 +1,8 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
- * @LastEditors: ,: sam
- * @LastEditTime: ,: 2020-10-22 17:22:01
- * @FilePath: ,: /mobile-ui-practice/src/ui.css
+ * @LastEditors: sam
+ * @LastEditTime: 2020-10-26 16:55:12
+ * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
  @import './reset.css';
@@ -16,5 +16,7 @@
  @import './content.css'; 
  /* 导航条样式 */
  @import './navbar.css'; 
+ /* 输入框样式 */
+ @import './input.css'
 
  

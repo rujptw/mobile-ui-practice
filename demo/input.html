@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-10-24 18:27:44
  * @LastEditors: sam
- * @LastEditTime: 2020-10-24 23:50:11
+ * @LastEditTime: 2020-10-26 16:45:00
  * @FilePath: /mobile-ui-practice/demo/input.html
 -->
 <!DOCTYPE html>
@@ -12,14 +12,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/ui.css">
     <title>表单元素</title>
+    <style>
+        /* .tt-input{
+            display:flex;
+            align-items: center;
+            height: 2rem;
+            padding-left:1rem;
+            border-bottom: 1px solid #ddd;
+        }
+        .tt-input:last-child{
+            border-bottom:0;
+        }
+        .tt-input > .tt-label{
+            flex-basis: 3rem;
+            flex-shrink: 0;
+            font-size: 16px;
+            color:#666;
+           
+        }
+        .tt-input > .tt-input-inner{
+            flex-grow:1;
+            height: 1.5rem;
+            border:none;            
+        } */
+        /* .tt-input-radio{
+            display: flex;
+            position: relative;
+            padding-left: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            width: 100%;
+            font-size: .8rem;
+            color:#333;
+        }
+        .tt-radio-check{
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            line-height: .8rem;
+            top:50%;
+            left:1rem;
+            margin-top:-.4rem;
+            color:green;
+            background: #fff;
+            font-size: .6rem;
+        } */
+    </style>
 </head>
 
 <body>
     <div class="tt-content">
         <h1 class="tt-panel-title">Panel标题</h1>
-        <div class="tt-panel-body  no-padding">Panel内容</p>
+        <div class="tt-panel-body  no-padding">
+            <!-- 我的 -->
+            <!-- <div class="tt-input">
+                <label class="tt-label" for="userName">用户名</label>
+                <input class="tt-input-inner" name="userName" type="text">
+            </div>
+            <div class="tt-input">
+                <label class="tt-label" for="password">密码</label>
+                <input class="tt-input-inner" name="password" type="text">
+            </div> -->
         </div>
     </div>
+    <!-- 作者的 -->
+    <div class="tt-content">
+        <h1 class="tt-panel-title">Panel标题</h1>
+        <div class="tt-panel-body  no-padding">
+            <div class="tt-form-item">
+                <label class="tt-form-label">用户名</label>
+                <div class="tt-form-body">
+                    <input class="tt-input" type="text" placeholder="请输入姓名">
+                    <i class="fa fa-exclamation tt-input-warning"></i>
+                </div>
+            </div>
+            <div class="tt-form-item">
+                <label class="tt-form-label">密码</label>
+                <div class="tt-form-body">
+                    <input class="tt-input" type="password" placeholder="请输入密码">
+                    <i class="fa fa-times tt-input-reset"></i>
+                </div>
+            </div>
+            <div class="tt-form-item">
+                <label class="tt-form-label">日期</label>
+                <div class="tt-form-body">
+                    <input class="tt-input" type="date" placeholder="请选择日期">
+                </div>
+            </div>
+        </div>
+        <!-- 我的 -->
+        <!-- <div class="tt-content">
+            <h1 class="tt-panel-title">Panel标题</h1>
+            <div class="tt-panel-body  no-padding">
+                <div class="tt-form-item">
+                    <div class="tt-form-body">
+                        <p class="tt-input-radio">单选按钮1
+                            <i class="fa fa-check tt-radio-check" ></i>   
+                        </p>
+                        <p class="tt-input-radio">单选按钮2</p>
+                        <p class="tt-input-radio">单选按钮3</p>
+                       
+                    </div>
+                </div>
+            </div>
+    </div> -->
+        <!-- 作者的 -->
+        <div class="tt-content">
+            <h1 class="tt-panel-title">单选</h1>
+            <div class="tt-panel-body  no-padding">
+                <div class="tt-form-item">
+                    <div class="tt-radio">
+                        <i class="fa fa-check tt-radio-icon"></i>
+                        <span class="tt-radio-desc">单选选项1</span>
+                        <input class="tt-radio-input" type="radio">
+                    </div>
+                </div>
+                <div class="tt-form-item">
+                    <div class="tt-radio checked">
+                        <i class="fa fa-check tt-radio-icon"></i>
+                        <span class="tt-radio-desc">单选选项2</span>
+                        <input class="tt-radio-input" type="radio">
+                    </div>
+                </div>
+                <div class="tt-form-item">
+                    <div class="tt-radio">
+                        <i class="fa fa-check tt-radio-icon"></i>
+                        <span class="tt-radio-desc">单选选项3</span>
+                        <input class="tt-radio-input" type="radio">
+                    </div>
+                </div>
+            </div>
+            <div class="tt-content">
+                <h1 class="tt-panel-title">多选</h1>
+                <div class="tt-panel-body  no-padding">
+                    <div class="tt-form-item">
+                        <div class="tt-check">
+                            <i class="fa fa-check tt-check-icon"></i>
+                            <span class="tt-check-desc">多选选项1</span>
+                            <input class="tt-check-input" type="check">
+                        </div>
+                    </div>
+                    <div class="tt-form-item">
+                        <div class="tt-check checked">
+                            <i class="fa fa-check tt-check-icon"></i>
+                            <span class="tt-check-desc">多选选项2</span>
+                            <input class="tt-check-input" type="check">
+                        </div>
+                    </div>
+                    <div class="tt-form-item">
+                        <div class="tt-check checked">
+                            <i class="fa fa-check tt-check-icon"></i>
+                            <span class="tt-check-desc">多选选项3</span>
+                            <input class="tt-check-input" type="check">
+                        </div>
+                    </div>
+                </div>
 </body>
 
 </html>

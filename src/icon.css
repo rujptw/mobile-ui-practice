@@ -1,8 +1,8 @@
 /*
  * @Date: ,: 2020-10-21 15:24:05
- * @LastEditors: ,: sam
- * @LastEditTime: ,: 2020-10-21 16:12:20
- * @FilePath: ,: /mobile-ui-practice/src/icon.css
+ * @LastEditors: sam
+ * @LastEditTime: 2020-10-26 16:44:27
+ * @FilePath: /mobile-ui-practice/src/icon.css
  */
  /* 字体图标, font-awesome */
  @import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css';
@@ -11,6 +11,7 @@
  .fa {
      text-align: center;
  }
+ /*
  .fa-info {
     background: #666;
     color: #fff;
@@ -19,11 +20,10 @@
  .fa-check{
      display: block;
      margin: 0 auto;
-     width: 6rem;
-     height: 6rem;
-     line-height: 6rem;
-     font-size: 3.5rem;
+     width: .8rem;
+     height: .8rem;
+     line-height: .8rem;
+     font-size: .8rem;
      border-radius: 50%;
-     background: #09bb07;
-     color: #fff;
- }
+     background: #fff;
+ } */
