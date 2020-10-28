@@ -1,22 +1,60 @@
 <!--
  * @Date: 2020-10-27 09:59:34
  * @LastEditors: sam
- * @LastEditTime: 2020-10-27 11:30:38
+ * @LastEditTime: 2020-10-28 16:04:14
  * @FilePath: /mobile-ui-practice/demo/button.html
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>按钮</title>
+    <link rel="stylesheet" href="../src/ui.css">
     <style>
-        .body{
-            flex-sh
-        }
+        /* .tt-btn{
+            display: block;
+            overflow: hidden;
+            width: 5rem;
+            height: 2rem;
+            text-align: center;
+            line-height: 2rem;
+            border:1px solid #eee;
+            border-radius: 3px;
+            font-size:.8rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        } */
     </style>
 </head>
+
 <body>
-    
+    <div class="tt-content">
+        <div class="tt-panel-title">标准按钮</div>
+        <div class="tt-panel-body">
+            <a class="tt-btn">普通</a>
+            <a class="tt-btn tt-btn-primary">成功</a>
+            <a class="tt-btn tt-btn-warning">警告</a>
+            <a class="tt-btn tt-btn-disabled">不可用</a>
+        </div>
+    </div>
+    <div class="tt-content">
+        <div class="tt-panel-title">大按钮</div>
+        <div class="tt-panel-body no-padding">
+            <a class="tt-btn tt-btn-primary tt-btn-large">成功</a>
+            <a class="tt-btn tt-btn-warning tt-btn-large">警告</a>
+            <a class="tt-btn tt-btn-disabled tt-btn-large">不可用</a>
+        </div>
+    </div>
+    <div class="tt-content">
+        <div class="tt-panel-title">小按钮</div>
+        <div class="tt-panel-body no-padding">
+            <a class="tt-btn tt-btn-primary tt-btn-small">成功了啊</a>
+            <a class="tt-btn tt-btn-warning tt-btn-small">警告</a>
+            <a class="tt-btn tt-btn-disabled tt-btn-small">不可用</a>
+        </div>
+    </div>
 </body>
+
 </html>
