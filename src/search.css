@@ -1,0 +1,65 @@
+/*
+ * @Date: 2020-10-29 17:18:54
+ * @LastEditors: sam
+ * @LastEditTime: 2020-10-29 17:32:07
+ * @FilePath: /mobile-ui-practice/src/search.css
+ */
+.tt-search{
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
+.tt-search.on-focus{
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.tt-header ~ .tt-content .tt-search.on-focus{
+    top:2.3rem
+}
+.tt-header ~ .tt-content .tt-search.on-focus{
+    bottom:2.5rem
+}
+
+/* 搜索栏中的表单 */
+.tt-search > .tt-search-form{
+    display: flex;
+    height: 2.3rem;
+    align-items: center;
+}
+
+.tt-search > .tt-search-form > .tt-search-input-wrap{
+    flex:1;
+    position: relative;
+    padding:0 .5rem;
+}
+
+.tt-search > .tt-search-form > .tt-search-cancel{
+    flex:0 0 2.2rem;
+    padding-right: .5rem;
+    text-align: center;
+    font-size: .7rem;
+    display: none;
+}
+
+.tt-search.onfocus > .tt-search-form > .tt-search-cancel{
+    display: block;
+}
+
+.tt-search .tt-search-icon{
+    position: absolute;
+    height: .8rem;
+    line-height: .9rem;
+    font-size: .7rem;
+    left: 1rem;
+    top:0;
+    bottom:0;
+    margin:auto;
+    color:#ccc;    
+}
+
+.tt-search .tt
