@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-10-29 15:18:36
  * @LastEditors: sam
- * @LastEditTime: 2020-11-29 15:21:58
+ * @LastEditTime: 2020-12-04 15:12:15
  * @FilePath: /mobile-ui-practice/demo/search.html
 -->
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 
 <body>
     <div class="tt-content">
-        <div class="tt-search ">
+        <div class="tt-search">
             <form class="tt-search-form" action="#">
                 <div class="tt-search-input-wrap">
                     <i class=" fa fa-search tt-search-icon"></i>
@@ -26,13 +26,25 @@
                 <span class="tt-search-cancel">取消</span>
             </form>
             <ul class="tt-search-suggest">
-                <li class="t-suggest-item">手机</li>
-                <li class="t-suggest-item">华为</li>
-                <li class="t-suggest-item">iPhone</li>
+                <li class="tt-suggest-item">手机</li>
+                <li class="tt-suggest-item">华为</li>
+                <li class="tt-suggest-item">iPhone</li>
             </ul>
         </div>
         <p class="content">内容区</p>
     </div>
+    <script>
+     let searchContainer = document.querySelector('.tt-search')
+     let searchInput = document.querySelector('.tt-search-input');
+     searchInput.addEventListener('focus',event=>{
+        searchContainer.classList.add('on-focus')
+     })
+     searchInput.addEventListener('blur',event=>{
+        searchContainer.classList.remove('on-focus')
+     })
+     
+     console.log(searchContainer.classList)
+    </script>
 </body>
 
 </html>

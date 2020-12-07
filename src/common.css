@@ -1,13 +1,14 @@
 /*
  * @Date: ,: 2020-10-20 21:34:06
  * @LastEditors: sam
- * @LastEditTime: 2020-10-29 10:42:50
+ * @LastEditTime: 2020-12-04 15:13:31
  * @FilePath: /mobile-ui-practice/src/common.css
  */
 
 /* 屏幕宽度在340至410时，基准尺寸使用20px */
  html {
      font-size: 20px;
+     height: 100%;
 }
 
 /* 屏幕宽度小于340px时,基准尺寸使用18px */
@@ -27,6 +28,7 @@
 /* body默认样式 */
 body{
      max-width: 640px;
+     height: 100%;
      margin: 0 auto;
      background: #f8f8f8;
      overflow-x: hidden;
