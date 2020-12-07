@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-12-04 16:20:08
  * @LastEditors: sam
- * @LastEditTime: 2020-12-04 18:04:42
+ * @LastEditTime: 2020-12-07 12:07:25
  * @FilePath: /mobile-ui-practice/src/list.css
  */
  /* 我的 */
@@ -25,6 +25,15 @@
     border-bottom: none;
 }
 
+.vertical-list{
+    display: flex;
+}
+
+.vertical-list .vertical-item{
+        flex-direction: column;
+}
+
+
 /* 作者的 */
 .tt-list >.tt-list-item{
     display: flex;
@@ -39,6 +48,20 @@
     border-bottom: 1px solid #eee;
 }
 
+/* 降价 */
+.tt-list-item > .tt-list-cut{
+    position: absolute;
+    font-size: .4rem;
+    width: 1.2rem;
+    height: .6rem;
+    text-align: center;
+    line-height: .6rem;
+    background:orangered;
+    border-radius: .1rem;
+    color:#fff;
+    top:0;
+    right: 0;
+}
 .tt-list-item > .tt-list-img{
     position: relative;
     overflow: hidden;
@@ -52,26 +75,48 @@
 }
 .tt-list-item > .tt-list-content{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     margin-left: .6rem;
     flex:1;
 }
 .tt-list-item > .tt-list-content >.tt-list-title{
+    /* height设置为line-height的两倍,防止带-webkit前缀失效后，效果失效*/
+    height: 2rem;
+    line-height: 1rem;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    /* white-space: nowrap; */
+    -webkit-line-clamp: 2;
+    /* 处理英文不换行 */
+    word-wrap: break-word;
+    word-break: break-all;
+    /* 单行省略 */
+    /* max-width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+
+
+}
+
+.tt-list-item > .tt-list-content > .tt-list-price{
+    font-size: .8rem;
+    color:orange;
+}
+
+.tt-list-item > .tt-list-content >.tt-item-content{
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    font-size: .6rem;
+    color:#ccc;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: wrap;
     word-wrap: break-word;
     word-break: break-all;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-}
-.tt-list-item > .tt-list-content >.tt-item-content{
-
-    font-size: .6rem;
-    color:#ccc;
-    word-wrap: break-word;
-    word-break: break-all;
-
 }
