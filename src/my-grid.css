@@ -1,0 +1,67 @@
+/*
+ * @Date: 2020-12-07 15:55:52
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-08 11:44:33
+ * @FilePath: /mobile-ui-practice/src/grid.css
+ */
+
+.grid-container{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;  
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    min-height: 10rem;
+
+}
+
+.grid-container > .grid-item{
+    box-sizing: border-box;
+    display: flex;
+    flex:1 1 33%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:.5rem;
+    color:#666;   
+}
+/* 多列分隔变量 */
+.grid-container > .grid-item.two-split{
+    flex-basis: var(--two-split)
+}
+.grid-container > .grid-item.three-split{
+    flex-basis: var(--three-split)
+}
+.grid-container > .grid-item.four-split{
+    flex-basis: var(--four-split)
+}
+.grid-container > .grid-item.five-split{
+    flex-basis: var(--five-split)
+}
+
+/* 设置边框 */
+.grid-item + .grid-item{
+    border-left: 1px solid #ccc;
+    border-top:1px solid #ccc;
+}
+
+/* 消除左边,n是从0开始递增的 */
+.grid-item.three-split:nth-child(3n+1){
+    border-left:none;
+}
+/*消除顶边-不能超过某个元素,⬇️这个例子就是不能超过第三个 */
+.grid-item.grid-item.three-split:nth-child(-n+3){
+    border-top:none;
+}
+/* 图标样式 */
+.grid-item > .fa-paper-plane{
+    font-size: 40px;
+    color: palegoldenrod;
+}
+/* 去除边框 */
+.grid-item.no-border{
+    border:none;
+}

@@ -1,49 +1,85 @@
 /*
- * @Date: 2020-12-07 15:55:52
+ * @Date: 2020-12-08 11:54:10
  * @LastEditors: sam
- * @LastEditTime: 2020-12-08 09:36:36
+ * @LastEditTime: 2020-12-08 14:28:21
  * @FilePath: /mobile-ui-practice/src/grid.css
  */
-.grid-container{
-    box-sizing: border-box;
-    position: relative;
+.tt-grid{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;  
-    border-top:1px solid #ccc;
-    border-bottom:1px solid #ccc;
+    border-top:1px solid #ddd;
 }
 
-.grid-container > .grid-item{
-    box-sizing: border-box;
-    display: flex;
+.tt-grid > .tt-grid-item{
+    position: relative;
     flex:1 1 33%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding:.5rem;
-    height: 5rem;
-    color:#666;   
+    box-sizing: border-box;
+    padding:1.2rem 0;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    background: #fff;
 }
-.grid-item + .grid-item{
-    border-left: 1px solid #ccc;
-    border-top:1px solid #ccc;
+
+.tt-grid .tt-grid-item:nth-child(3n){
+    border-right: none;
 }
-/* 消除左边,n是从0开始递增的 */
-.grid-item:nth-child(3n+1){
-    border-left:none;
-}
-/*消除顶边-不能超过某个元素,⬇️这个例子就是不能超过第三个 */
-.grid-item:nth-child(-n+3){
-    border-top:none;
-}
-/* 图标样式 */
-.grid-item > .fa-paper-plane{
-    font-size: 40px;
-    color: palegoldenrod;
-}
-/* 去除边框 */
-.grid-item.no-border{
+
+.tt-grid.no-border{
     border:none;
 }
+.tt-grid.no-border > .tt-grid-item{
+    border:none!important; /*防止后面样式覆盖*/
+}
+/* 2列 */
+.tt-grid.tt-grid-2 .tt-grid-item{
+    border-right: 1px solid #ddd;
+    flex-basis: 50%;;
+    padding:1.8rem 0;
+}
+.tt-grid.tt-grid-2 .tt-grid-item:nth-child(2n){
+    border-right: none;
+}
+/* 两列布局中，9个格子的最后一个需要做处理，防止占满整行 */
+.tt-grid.tt-grid-2 .tt-grid-item:last-child{
+    flex:0 1 50%
+}
+
+/* 4列 */
+.tt-grid.tt-grid-4 .tt-grid-item{
+    border-right: 1px solid #ddd;
+    flex-basis:25%;;
+    padding:.9rem 0;
+}
+.tt-grid.tt-grid-4 .tt-grid-item:nth-child(4n){
+    border-right: none;
+}
+
+/* 5列 */
+.tt-grid.tt-grid-5 .tt-grid-item{
+    border-right: 1px solid #ddd;
+    flex-basis:20%;;
+    padding:.6rem 0;
+}
+.tt-grid.tt-grid-5 .tt-grid-item:nth-child(5n){
+    border-right: none;
+}
+/*  五列布局中，9个格子的最后4个需要做处理，防止占满整行 */
+.tt-grid.tt-grid-5 .tt-grid-item:nth-child(n+6){
+    flex: 0 1 20%;
+}
+
+
+/* icon */
+.tt-grid > .tt-grid-item > .tt-grid-icon{
+    font-size: 1.5rem;
+    color:#aaa;
+    margin-bottom: .5rem;
+}
+/* 说明 */
+.tt-grid > .tt-grid-item > .tt-grid-label{
+    font-size: .6rem;
+    color:#333;
+}
+
+

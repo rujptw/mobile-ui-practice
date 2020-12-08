@@ -1,11 +1,13 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
  * @LastEditors: sam
- * @LastEditTime: 2020-12-07 15:57:20
+ * @LastEditTime: 2020-12-08 14:01:54
  * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
  @import './reset.css';
+ /* 引入变量 */
+ @import './variables.css';
  /* 公共样式 */
  @import './common.css';
  /* 字体图标 */
@@ -24,7 +26,13 @@
  @import './search.css';
  /* list样式 */
  @import './list.css';
- /* grid样式 */
- @import './grid.css';
+ /* 自己写的grid样式 */
+ /* @import './my-grid.css'; */
+ /* 教程写的grid样式 */
+@import './grid.css';
+
+ 
+
+
 
  

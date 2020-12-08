@@ -1,0 +1,13 @@
+/*
+ * @Date: 2020-12-08 10:03:03
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-08 14:30:21
+ * @FilePath: /mobile-ui-practice/src/variables.css
+ */
+ /* 用于my-grid.css */
+:root{
+    --two-split: 50%;
+    --three-split:33%;
+    --four-split:25%;
+    --five-split:20%
+}
