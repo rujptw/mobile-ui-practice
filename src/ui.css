@@ -1,7 +1,7 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
  * @LastEditors: sam
- * @LastEditTime: 2020-12-04 16:20:24
+ * @LastEditTime: 2020-12-07 15:57:20
  * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
@@ -22,7 +22,9 @@
  @import './button.css';
  /* 搜索样式 */
  @import './search.css';
-
- @import './list.css'
+ /* list样式 */
+ @import './list.css';
+ /* grid样式 */
+ @import './grid.css';
 
  

@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-12-04 16:20:08
  * @LastEditors: sam
- * @LastEditTime: 2020-12-07 12:07:25
+ * @LastEditTime: 2020-12-08 09:25:12
  * @FilePath: /mobile-ui-practice/src/list.css
  */
  /* 我的 */
@@ -96,7 +96,8 @@
     /* max-width: 500px;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis; */
+    text-overflow: ellipsis;
+    */
 
 
 }
