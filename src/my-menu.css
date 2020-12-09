@@ -1,0 +1,43 @@
+/*
+ * @Date: 2020-12-09 15:04:07
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-09 16:21:04
+ * @FilePath: /mobile-ui-practice/src/my-menu.css
+ */
+.tt-menu{
+    overflow: hidden;
+}
+.tt-menu > .tt-menu-item{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    padding:.4rem 1rem;
+    justify-content: space-between;
+    font-size: 18PX;
+    border-bottom: 1px solid #ccc;
+}
+.tt-menu > .tt-menu-item > .tt-menu-title,
+.tt-menu > .tt-menu-item >.tt-menu-desc{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tt-menu > .tt-menu-item > .tt-menu-title{
+    color:#333;
+    max-width: 10rem;
+}
+.tt-menu > .tt-menu-item > .tt-menu-desc{
+    color:#666;
+    max-width: 6rem;
+}
+.tt-menu-item > .tt-menu-desc>.tt-menu-icon{
+        font-size: 16PX;
+        color:orangered;
+        margin-right:.2rem;
+}
+/* .tt-menu-item > .tt-menu-desc>.tt-menu-desc-item{
+} */
+
+
+
+

@@ -1,0 +1,71 @@
+/*
+ * @Date: 2020-12-09 16:32:17
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-09 17:17:29
+ * @FilePath: /mobile-ui-practice/src/menu.css
+ */
+.tt-menu > .tt-menu-item{
+    display: flex;
+    align-items: center;
+    height: 2.3rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: .8rem;
+}
+
+.tt-menu > .tt-menu-item > .tt-menu-name{
+    flex:1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#333;
+}
+.tt-menu > .tt-menu-item > .tt-menu-value{
+    max-width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#999;
+}
+.tt-menu > .tt-menu-item > .tt-menu-icon{
+    margin-left: .3rem;
+    color:#999;
+}
+
+.tt-menu > .tt-menu-item > .tt-switch{
+    position: relative;
+    box-sizing: content-box;
+    width: 2.6rem;
+    height: 1.4rem;
+    border:1px solid #ccc;
+    outline: 0;
+    border-radius: .75rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color .3s,border-color .3s;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.tt-menu > .tt-menu-item > .tt-switch:checked{
+    border-color: #07C160;
+    background-color: #07C160;
+}
+
+.tt-menu > .tt-menu-item > .tt-switch::after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: .7rem;
+    background-color: #FFF;
+    box-shadow: 0 0 2px #999;
+    transition: left .3s;
+
+}
+.tt-menu > .tt-menu-item > .tt-switch:checked::after{
+    left: 1.2rem;
+}
+

@@ -1,7 +1,7 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
  * @LastEditors: sam
- * @LastEditTime: 2020-12-08 14:01:54
+ * @LastEditTime: 2020-12-09 16:33:54
  * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
@@ -30,6 +30,10 @@
  /* @import './my-grid.css'; */
  /* 教程写的grid样式 */
 @import './grid.css';
+/* 自己写的样式 */
+/* @import './my-menu.css' */
+/* 教程写的menu样式 */
+@import './menu.css'
 
  
 
