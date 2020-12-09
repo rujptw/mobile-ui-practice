@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-12-09 16:32:17
  * @LastEditors: sam
- * @LastEditTime: 2020-12-09 17:17:29
+ * @LastEditTime: 2020-12-09 18:05:08
  * @FilePath: /mobile-ui-practice/src/menu.css
  */
 .tt-menu > .tt-menu-item{
@@ -15,6 +15,7 @@
 
 .tt-menu > .tt-menu-item > .tt-menu-name{
     flex:1;
+    /* 配合flex:1,能够实现文本截断 */
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -22,6 +23,7 @@
 }
 .tt-menu > .tt-menu-item > .tt-menu-value{
     max-width: 5rem;
+    /* 防止截断失效 */
     height: 1rem;
     line-height: 1rem;
     overflow: hidden;
