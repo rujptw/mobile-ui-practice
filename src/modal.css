@@ -1,0 +1,87 @@
+/*
+ * @Date: 2020-12-13 20:42:30
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-13 22:46:40
+ * @FilePath: /mobile-ui-practice/src/modal.css
+ */
+.tt-modal{
+    display: none;
+}
+
+.tt-modal.show{
+    display: block;
+}
+
+.tt-modal .tt-modal-wrap{
+    position: absolute;
+    width: 75%;
+    max-width: 480px;
+    top:45%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin:auto;
+    background: #fff;
+    border-radius: .4rem;
+    z-index: 301;
+}
+
+.tt-modal .tt-modal-body{
+    overflow: hidden;
+    padding: 1.8rem .8rem 1.5rem;
+    max-height: 6rem;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    overflow-y: scroll;
+}
+
+.tt-modal .tt-modal-footer{
+    display: flex;
+    border-top:1px solid #ddd;
+}
+
+.tt-modal .tt-modal-footer .tt-btn{
+    border:none;
+    border-radius: 0;
+    width: 100%;
+    font-size: .8rem;
+}
+
+.tt-modal .tt-modal-footer .tt-btn + .tt-btn{
+    border-left: 1px solid #ddd;
+}
+
+.tt-modal .tt-modal-close{
+    position: absolute;
+    padding-top:3rem;
+    left: 0;
+    right: 0;
+    text-align:center;
+}
+
+/* 海报modal样式 */
+
+.tt-modal .tt-modal-body.no-padding{
+    padding:0;
+    max-height: none;
+}
+.tt-modal .tt-modal-body .tt-modal-img{
+    display: block;/*设置图片为block元素，让图片能充满容器,因为有些浏览器会默认给img一个边*/
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.tt-modal .tt-modal-close{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3rem;
+    margin: auto;
+    width: 1.3rem;
+    height: 1.3rem;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 100;
+    color: #eee;
+}

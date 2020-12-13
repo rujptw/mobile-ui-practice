@@ -1,0 +1,70 @@
+/*
+ * @Date: 2020-12-11 15:09:18
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-13 22:49:44
+ * @FilePath: /mobile-ui-practice/src/my-modal.css
+ */
+.tt-modal{
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    width: 80%;
+    background: #fff;
+    margin-top:45%;
+    left: 10%;
+    /* 伪元素（相当于子元素）z-index为负数时，需要取消父元素的z-index，不能让父元素创建层叠上下文*/
+    /* z-index: 200; */
+    color:#333;
+    border:1px solid #ccc;
+    border-radius: .5rem;
+}
+.tt-modal.show{
+    display:block;
+}
+.tt-modal:before{
+    content:'';
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    /* z-index不能为正。否则伪元素（相当于子元素）会跑到父元素的上面 */
+    z-index:-1;
+    background: rgba(0, 0, 0, .1);
+}
+
+.tt-modal >.tt-modal-content{
+    font-size: 18PX;
+    overflow: hidden;
+    overflow-y: scroll; /*scroll和auto效果是一致的*/
+    max-height: 6rem;
+    padding:.5rem .6rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: normal;
+    /* overflow: hidden;
+    padding: 1.8rem .8rem 1.5rem;
+    max-height: 6rem;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    overflow-y: scroll; */
+
+}
+.tt-modal > .tt-modal-operate{
+    display: flex;
+    height: 2rem;
+    font-size: 18PX;
+    font-weight: bold;
+}
+
+.tt-modal .tt-operate-item{
+    flex:1;
+    text-align: center;
+    line-height: 2rem;
+    border-right: 1px solid #ccc;
+}
+.tt-operate-item:last-child{
+    border-right: none;
+}
