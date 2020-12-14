@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-12-14 10:41:52
  * @LastEditors: sam
- * @LastEditTime: 2020-12-14 15:13:15
+ * @LastEditTime: 2020-12-14 15:46:58
  * @FilePath: /mobile-ui-practice/src/my-loading.css
  */
 /* 页面loading */
@@ -72,7 +72,7 @@
     box-sizing: border-box;
     flex:1;
     height: 0.6rem;
-    align-self: flex-end;
+    align-self: flex-end;/*调整子项位置*/
     border-top:1px solid #ccc;
 }
 .tt-list-loading .tt-list-arrow{

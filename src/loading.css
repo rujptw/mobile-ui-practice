@@ -1,0 +1,69 @@
+/*
+ * @Date: 2020-12-14 15:15:32
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-14 16:01:56
+ * @FilePath: /mobile-ui-practice/src/loading.css
+ */
+ /* 页面loading */
+.tt-loading{
+    padding:1rem 0;
+    text-align: center;
+}
+.tt-loading >.tt-loading-icon{
+    font-size: 4.5rem;
+    color:rgba(0,0,0,.05)
+}
+.tt-loading >.tt-loading-info{
+    display: block;
+    margin-top: .6rem;
+    font-size: .8rem;
+    color: #ccc;
+}
+
+/* 列表loading */
+/* 设置分割线的一种方式,父元素上边框做分割线，子元素向上移动，
+配合左右padding和背景色遮盖住部分上边框,即可完成分割线*/
+.tt-loading-inline{
+    margin: 1.5rem auto 1rem;
+    width: 12.5rem;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    color: #999;
+    height: 1rem;
+    border-top:1px solid rgba(0,0,0,.1);
+}
+.tt-loading-inline > .tt-loading-info{
+    display: inline-block;
+    /* padding获取了分割线和文字的距离 */
+    padding: 0 .5rem;
+    position: relative;
+    top:-.7rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .7rem;
+    /* 背景颜色遮盖了背后的分割线 */
+    background: #fff;
+}
+
+.tt-loading-inline > .tt-loading-info >.tt-loading-icon{
+    color: rgba(0,0,0,.2);
+}
+
+
+/* 箭头动画 */
+.fa-vibrate-y{
+    animation: fa-vibrate-y 1.5s infinite;
+}
+
+@keyframes fa-vibrate-y{
+    0%{
+        transform:translateY(-10%);
+    }
+    50%{
+        transform:translateY(0%);
+    }
+    100%{
+        transform:translateY(10%);
+    }
+}

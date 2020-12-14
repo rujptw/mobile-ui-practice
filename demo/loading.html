@@ -1,0 +1,45 @@
+<!--
+ * @Date: 2020-12-14 15:15:25
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-14 16:02:14
+ * @FilePath: /mobile-ui-practice/demo/loading.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <link rel="stylesheet" href="../src/ui.css">
+</head>
+<body>
+    <div class="tt-content">
+        <h1 class="tt-panel-title"></h1>
+        <div class="tt-panel-body">
+            <!-- 页面背景 -->
+            <div class="tt-loading">
+                <i class="fa fa-circle-o-notch fa-spin tt-loading-icon"></i>
+                <span class="tt-loading-info">用力加载中...</span>
+            </div>
+            <div class="tt-loading">
+                <i class="fa fa-refresh tt-loading-icon"></i>
+                <span class="tt-loading-info">加载出错，点我重新加载</span>
+            </div>
+            <!-- 列表loading -->
+            <div class="tt-loading-inline">
+                <span class="tt-loading-info">
+                    <i class="fa fa-circle-o-notch fa-spin tt-loading-icon"></i>
+                    用力加载中
+                </span>
+            </div>
+            <div class="tt-loading-inline">
+                <span class="tt-loading-info">
+                    用力加载中
+                    <i class="fa fa-arrow-up tt-loading-icon fa-vibrate-y"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
