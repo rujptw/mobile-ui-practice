@@ -1,11 +1,11 @@
 /*
  * @Date: ,: 2020-10-21 15:24:05
  * @LastEditors: sam
- * @LastEditTime: 2020-10-26 16:44:27
+ * @LastEditTime: 2020-12-14 14:03:02
  * @FilePath: /mobile-ui-practice/src/icon.css
  */
  /* 字体图标, font-awesome */
- @import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css';
+ @import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 
  /* 在引入位置可修改默认样式 */
  .fa {

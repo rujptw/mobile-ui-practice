@@ -1,0 +1,114 @@
+<!--
+ * @Date: 2020-12-14 10:41:22
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-14 15:08:11
+ * @FilePath: /mobile-ui-practice/demo/my-loading.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <link rel="stylesheet" href="../src/ui.css">
+    <style>
+        /* .test-split{
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 5rem;
+        }
+        .item{
+            line-height: 5rem;
+            width: 100%;
+        }
+        .item::before{
+            content: '';
+            position: absolute;
+            height: .1rem;
+            background: #ccc;
+            left:0;
+            right:100%;
+            top:50%;
+            transition: right 2s;
+
+
+        }
+        .item::after{
+            content: '';
+            position: absolute;
+            height: .1rem;
+            background: #ccc;
+            right:0;
+            left:100%;
+            top:50%;
+            transition: left 2s;
+        }
+       .test-split:hover .item::after{
+            left:60%;
+        }
+        .test-split:hover .item::before{
+            right: 60%;
+
+        }
+        .line_01{  
+            padding: 0 20px 0;  
+            margin: 20px 0;  
+            line-height: 1px;  
+            border-left: 190px solid #ddd;  
+            border-right: 190px solid #ddd;  
+            text-align: center;  
+        }
+    .line_02{  
+        height: 1px;  
+        border-top: 1px solid #ddd;  
+        text-align: center;  
+    }
+    .line_02 span{  
+        position: relative;
+        top: -16px;
+        background: #fff;
+        padding: 0 20px;
+    } */
+    </style>
+</head>
+<body>
+    <div class="tt-header">
+        <div class="left"><i class="fa fa-chevron-left"></i></div>
+        <div class="title">模态框</div>
+        <div class="right"><i class="fa fa-ellipsis-h"></i></div>
+    </div>
+    <div class="tt-navbar">
+        <a  class="navbar-item">
+            <i class="fa fa-home icon"></i><span class="name">首页</span>
+        </a>
+        <a  class="navbar-item">
+            <i class="fa fa-list icon"></i><span class="name">分类</span>
+        </a>
+        <a  class="navbar-item">
+            <i class="fa fa-search icon"></i><span class="name">发现</span>
+        </a>
+        <a  class="navbar-item">
+            <i class="fa fa-user icon"></i><span class="name">我的</span>
+        </a>
+    </div>
+    <div class="tt-content">
+        <div class="tt-page-loading">
+            <i class="fa fa-spin fa-refresh tt-page-loading-icon"></i>
+            <span class="tt-page-loading-desc">加载中</span>
+        </div>
+         <div class="tt-list-loading">
+            <i class="tt-split-line"></i>
+            <span class="tt-list-loading-desc-container">
+               <i class="fa fa-refresh fa-spin tt-list-circle-icon"></i>
+               <span class="tt-list-loading-desc">
+                加载中,请稍后 加载中,请稍后
+               </span> 
+               <i class="fa fa-arrow-up tt-list-loading-icon tt-list-arrow"></i>
+            </span>
+            <i class="tt-split-line"></i>
+         </div>
+    </div>
+</body>
+</html>

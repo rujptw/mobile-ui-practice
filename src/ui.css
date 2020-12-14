@@ -1,7 +1,7 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
  * @LastEditors: sam
- * @LastEditTime: 2020-12-13 22:49:56
+ * @LastEditTime: 2020-12-14 10:42:40
  * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
@@ -38,7 +38,8 @@
 /* @import './my-modal.css'; */
 /* 作者的样式 */
 @import './modal.css';
-
+/* 自己写的样式 */
+@import './my-loading.css';
 
  
 

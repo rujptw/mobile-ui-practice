@@ -1,0 +1,93 @@
+/*
+ * @Date: 2020-12-14 10:41:52
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-14 15:13:15
+ * @FilePath: /mobile-ui-practice/src/my-loading.css
+ */
+/* 页面loading */
+.tt-page-loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.tt-page-loading > .tt-page-loading-icon{
+    font-size: 5rem;
+    color:#ccc;
+    height: 5.8rem;
+    width: 5.8rem;
+    line-height: 5.8rem;
+    text-align: center;
+    
+}
+.tt-page-loading > .tt-page-loading-desc{
+    font-size: 1rem;
+    color: #333;
+}
+
+/* 列表 loading */
+.tt-list-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:2.5rem;
+    height: 1.2rem;
+    left: 0;
+    right: 0;
+    font-size: .6rem;
+    color: #333;
+    
+    
+}
+.tt-list-loading > .tt-list-loading-desc-container{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 15rem;
+    margin:0 .5rem;
+}
+.tt-list-loading .tt-list-circle-icon{
+    position: relative;
+    font-size: .8rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 1rem;
+    text-align: center;
+    color: #ccc;
+    bottom:-.1rem;/*调整circle icon位置，使其居中*/
+}
+.tt-list-loading .tt-list-loading-icon{
+    font-size: .8rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 1rem;
+    text-align: center;
+    color: #ccc;
+}
+.tt-list-loading .tt-split-line{
+    box-sizing: border-box;
+    flex:1;
+    height: 0.6rem;
+    align-self: flex-end;
+    border-top:1px solid #ccc;
+}
+.tt-list-loading .tt-list-arrow{
+    animation: arrow-move 1.5s ease-out infinite;
+}
+
+@keyframes arrow-move{
+    0%{
+        transform: translateY(10%);
+    }
+    25%{
+        transform: translateY(-10%);
+    }
+    50%{
+        transform: translateY(10%);
+
+    }
+}
