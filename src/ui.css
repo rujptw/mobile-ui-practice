@@ -1,7 +1,7 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
  * @LastEditors: sam
- * @LastEditTime: 2020-12-14 15:53:31
+ * @LastEditTime: 2020-12-18 15:44:53
  * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
@@ -42,6 +42,8 @@
 /* @import './my-loading.css'; */
 /* 作者写的样式 */
 @import './loading.css';
+
+@import './toast.css';
 
  
 

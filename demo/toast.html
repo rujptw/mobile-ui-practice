@@ -1,0 +1,64 @@
+<!--
+ * @Date: 2020-12-13 20:42:22
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-21 10:54:34
+ * @FilePath: /mobile-ui-practice/demo/toast.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toast</title>
+    <link rel="stylesheet" href="../src/ui.css">
+</head>
+<body>
+    <div class="tt-header">
+        <div class="left"><i class="fa fa-chevron-left"></i></div>
+        <div class="title">toast</div>
+        <div class="right"><i class="fa fa-ellipsis-h"></i></div>
+    </div>
+    <div class="tt-navbar">
+        <a  class="navbar-item">
+            <i class="fa fa-home icon"></i><span class="name">首页</span>
+        </a>
+        <a  class="navbar-item">
+            <i class="fa fa-list icon"></i><span class="name">分类</span>
+        </a>
+        <a  class="navbar-item">
+            <i class="fa fa-search icon"></i><span class="name">发现</span>
+        </a>
+        <a  class="navbar-item">
+            <i class="fa fa-user icon"></i><span class="name">我的</span>
+        </a>
+    </div>
+    <div class="tt-content" onclick="addShow()">
+        内容区
+    </div>
+        <div class="tt-toast-body ">
+            <i class="fa fa-check tt-toast-icon"></i>
+            <span class="tt-toast-desc">操作成功</span>
+        </div>
+</body>
+<script>
+    let container= document.querySelector('.tt-toast-body');
+    console.log(container)
+    function addShow(){
+        container.classList.toggle('show')
+    }
+    var transitionFlag = true;
+    // 监听transitionend事件，移除dom
+    container.addEventListener('transitionend',(e)=>{
+        // 防止transitions事件执行多次
+        if(e.target === e.currentTarget && transitionFlag) {
+            transitionFlag = false;
+            console.log(1244)
+            setTimeout(()=>{
+                container.classList.remove('show')
+                // container.remove()
+            },500)
+        }
+        
+    })
+</script>
+</html>

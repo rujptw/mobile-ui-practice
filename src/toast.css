@@ -1,0 +1,56 @@
+/*
+ * @Date: 2020-12-18 15:28:26
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-21 10:55:03
+ * @FilePath: /mobile-ui-practice/src/toast.css
+ */
+/* @keyframes toastMove{
+    form{
+      opacity:0;
+      transform: translate(-50%,-50%);
+    }   
+    to{
+      opacity: 1;
+      transform: translate(-50%,-80%);
+    }
+} */
+ 
+
+
+.tt-toast-body{
+    box-sizing: border-box;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index:301;
+    position:fixed;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    width: 10rem;
+    height: 8rem;
+    border-radius: .8rem;
+    background:rgba(0, 0, 0, .3);
+    opacity:0;
+    color: #fff;
+    transition: transform 1s,opacity 1s;
+    /* animation: toastMove 1s linear; */
+    /* 保留最后一帧 */
+    /* animation-fill-mode:forwards; */
+}
+
+.tt-toast-body.show{
+    /* 使toast处于屏幕略微在上位置 translate(x,y) */
+    transform: translate(-50%,-80%);
+    opacity: 1;
+}
+
+.tt-toast-body .tt-toast-icon{
+    font-size: 3.6rem;
+}
+.tt-toast-body .tt-toast-desc{
+    font-size: 1rem;
+}
+
