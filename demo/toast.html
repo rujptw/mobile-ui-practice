@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-12-13 20:42:22
  * @LastEditors: sam
- * @LastEditTime: 2020-12-21 10:54:34
+ * @LastEditTime: 2020-12-21 11:02:43
  * @FilePath: /mobile-ui-practice/demo/toast.html
 -->
 <!DOCTYPE html>
@@ -33,7 +33,7 @@
         </a>
     </div>
     <div class="tt-content" onclick="addShow()">
-        内容区
+        点击一下
     </div>
         <div class="tt-toast-body ">
             <i class="fa fa-check tt-toast-icon"></i>
@@ -55,7 +55,8 @@
             console.log(1244)
             setTimeout(()=>{
                 container.classList.remove('show')
-                // container.remove()
+                // 移除dom操作有点问题
+                // container.parentNode.removeChild(container)
             },500)
         }
         
