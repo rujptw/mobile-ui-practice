@@ -1,0 +1,88 @@
+/*
+ * @Date: 2020-12-27 15:28:01
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-29 17:43:16
+ * @FilePath: /mobile-ui-practice/src/action-sheet.css
+ */
+
+.tt-action-sheet{
+   /* 就是把这个dom当作一个壳，什么都不放 */
+}
+.tt-action-sheet.show{
+    
+}
+
+.tt-action-sheet > .tt-mask{
+    opacity: 0;
+    /* 蒙板隐藏时，让事件穿透蒙板 */
+    pointer-events:none;
+    transition: opacity 1s;
+}
+.tt-action-sheet.show > .tt-mask{
+    opacity: 1;
+    /* 处理蒙板显示时，让事件无法穿透蒙板 */
+    pointer-events:auto;
+
+}
+.tt-action-sheet > .tt-action-sheet-wrap{
+    position:fixed;
+    bottom:0;
+    /* 设置left和right是为了平铺 */
+    left: 0;
+    right: 0;
+    max-width: 640px;
+    /* 保持居中 */
+    margin:auto;
+    transform: translateY(100%);
+    z-index:301;
+    width: 100%;
+    background: #ccc;
+    transition:transform 1s;
+}
+.tt-action-sheet.show > .tt-action-sheet-wrap{
+    transform: translateY(0%) ;
+
+}
+.tt-action-sheet-wrap > .tt-action-sheet-header{
+    overflow: hidden;
+    /* 保证两行 */
+     display: -webkit-box;
+     -webkit-box-orient:vertical;
+     -webkit-line-clamp: 2;
+    /* 防止👆的失效 */
+    height:3rem;
+    padding: .3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: .8rem;
+    color:#ccc;
+    background: #fff;
+    border:1px solid #ccc;
+}
+.tt-action-sheet-wrap > .tt-action-sheet-body{
+    background: #fff;
+    margin-bottom:.3rem;
+}
+
+.tt-action-sheet-wrap .tt-action-sheet-item{
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 1;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.tt-action-sheet-wrap .tt-action-sheet-item:last-child{
+    border-bottom: 0;
+}
+
+.tt-action-sheet-wrap .tt-action-sheet-footer{
+    box-sizing: border-box;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    background: #fff;
+}

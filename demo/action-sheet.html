@@ -1,4 +1,10 @@
 <!--
+ * @Date: 2020-12-27 15:27:33
+ * @LastEditors: sam
+ * @LastEditTime: 2020-12-29 17:43:54
+ * @FilePath: /mobile-ui-practice/demo/action-sheet.html
+-->
+<!--
  * @Date: 2020-12-13 20:42:22
  * @LastEditors: sam
  * @LastEditTime: 2020-12-27 15:26:46
@@ -32,40 +38,30 @@
             <i class="fa fa-user icon"></i><span class="name">我的</span>
         </a>
     </div>
-    <div class="tt-content" onclick="addShow()">
+    <div class="tt-content" onClick="test()">
         点击一下
     </div>
-        <!-- 操作成功-toast -->
-        <!-- <div class="tt-toast-body ">
-            <i class="fa fa-check tt-toast-icon"></i>
-            <span class="tt-toast-desc">操作成功</span>
-        </div> -->
-        <!-- ⌛️-等待中 -->
-        <div class="tt-toast-body ">
-            <i class="fa fa-circle-o-notch fa-spin tt-toast-icon"></i>
-            <span class="tt-toast-desc">操作进行中</span>
+        <div class="tt-action-sheet ">
+            <div class="tt-mask"></div>
+            <div class="tt-action-sheet-wrap">
+                <p class="tt-action-sheet-header">请问您想做些什么</p>
+                <ul class="tt-action-sheet-body">
+                    <li class="tt-action-sheet-item">收藏</li>
+                    <li class="tt-action-sheet-item">关注</li>
+                    <li class="tt-action-sheet-item">分享给好友</li>
+                </ul>
+                <p class="tt-action-sheet-footer" onClick="test()" >取消</p>
+            </div>
         </div>
+        <script>
+             let container = document.querySelector('.tt-action-sheet');
+                container.classList.toggle('show')
+            function test(){
+                let container = document.querySelector('.tt-action-sheet');
+                container.classList.toggle('show')
+            }
+        </script>
 </body>
 <script>
-    let container= document.querySelector('.tt-toast-body');
-    console.log(container)
-    function addShow(){
-        container.classList.toggle('show')
-    }
-    var transitionFlag = true;
-    // 监听transitionend事件，移除dom
-    container.addEventListener('transitionend',(e)=>{
-        // 防止transitions事件执行多次
-        if(e.target === e.currentTarget && transitionFlag) {
-            transitionFlag = false;
-            console.log(1244)
-            setTimeout(()=>{
-                container.classList.remove('show')
-                // 移除dom操作有点问题
-                // container.parentNode.removeChild(container)
-            },500)
-        }
-        
-    })
 </script>
 </html>

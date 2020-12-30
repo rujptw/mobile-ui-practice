@@ -1,7 +1,7 @@
 /*
  * @Date: ,: 2020-10-20 21:21:53
  * @LastEditors: sam
- * @LastEditTime: 2020-12-18 15:44:53
+ * @LastEditTime: 2020-12-27 15:28:29
  * @FilePath: /mobile-ui-practice/src/ui.css
  */
  /* css reset */
@@ -44,6 +44,8 @@
 @import './loading.css';
 
 @import './toast.css';
+
+@import './action-sheet.css'
 
  
 
