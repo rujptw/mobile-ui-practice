@@ -1,0 +1,80 @@
+/*
+ * @Date: 2021-01-11 11:17:07
+ * @LastEditors: sam
+ * @LastEditTime: 2021-01-18 09:26:48
+ * @FilePath: /mobile-ui-practice/src/my-article.css
+ */
+
+.tt-article > .tt-article-title{
+    padding:.6rem 0;   
+    font-size: 24PX;
+    font-weight: bold;
+    
+}
+.tt-article > .tt-article-desc{
+    padding-bottom:.3rem;  
+    font-size: 14PX;
+    color:#ccc;
+}
+.tt-article > .tt-article-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tt-article > .tt-article-content > .tt-article-subtitle{
+    align-self: flex-start;
+    padding:.4rem 0;
+    font-size: 20PX;
+    font-weight: bold;
+}
+.tt-article > .tt-article-content > .tt-article-paragraph{
+    font-size: 16PX;
+    line-height: 22PX;
+    color: #333;
+    margin-bottom: .8rem;
+}
+.tt-article > .tt-article-content > .tt-article-paragraph:last-child{
+    margin-bottom: 0;
+}
+
+.tt-article > .tt-article-content > .tt-article-img{
+    display: block;
+    max-width: 100%;
+}
+.tt-article > .tt-article-content > .tt-article-next{
+    position: absolute;
+    text-align: center;
+    bottom:.8rem;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background: linear-gradient(to top,#fff,rgba(255,255,255,0));
+}
+
+@keyframes arrow-move{
+    0%{
+    transform: translateY(.5rem);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+.tt-article .tt-article-icon{
+    display: block;
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom:0;
+    font-size:.8rem;
+    color:orangered;
+    transform: translate(0,.5rem);
+      
+}
+/* 动画需要加上额外的class来放置 */
+.tt-article .tt-move-icon{
+    animation: arrow-move .3s infinite;
+}
+
+
+
