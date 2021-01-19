@@ -1,0 +1,29 @@
+{
+  "name": "mobile-ui-practice",
+  "version": "1.0.0",
+  "description": "css-ui practice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rujptw/mobile-ui-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rujptw/mobile-ui-practice/issues"
+  },
+  "homepage": "https://github.com/rujptw/mobile-ui-practice#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.1",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0"
+  }
+}
